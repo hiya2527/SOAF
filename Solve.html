@@ -12,7 +12,7 @@
     <style>
         .fWide {
             width: 100%;
-            margin-right: 10px
+           
         }
     </style>
 
@@ -72,15 +72,15 @@
     <div class="container">
         <div class="col">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-12 text-center">
                     <h1 class="mt-5">Sum of all Fears</h1>
                     <p class="lead">Please enter Your numbers</p>
                 </div>
             </div>
             <hr />
             <div class="row">
-                <div class="col">
-                    <div class="row">
+                <div class="col-4 ">
+                    
                     <input id="InputSoaf" class="fWide" type="number" placeholder="Enter goal Number" />
 
                     <input id="InputSoaf1" class="fWide" type="number" placeholder="Enter Sum Number 1" />
@@ -88,7 +88,12 @@
                     <input id="InputSoaf3" class="fWide" type="number" placeholder="Enter Sum Number 3" />
                     <input id="InputSoaf4" class="fWide" type="number" placeholder="Enter Sum Number 4" />
                     <input id="InputSoaf5" class="fWide" type="number" placeholder="Enter Sum Number 5" />
+             
                 </div>
+                <div class="col-4">
+                    <div class="row">
+                        <p class="text-center" id="OutputSoaf"></p>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -97,15 +102,13 @@
                 </div>
 
             </div>
-            <div class="row">
-                <p class="text-center" id="OutputSoaf"></p>
-            </div>
+            
 
             <hr />
 
             <div class="row">
 
-                <button class="btn btn-danger" onclick="clearTC()">Clear</button>
+                <div class="col-1"> <button class="btn centered btn-danger" onclick="clearTC()">Clear</button> </div>
             </div>
         </div>
 
@@ -130,7 +133,8 @@
                 let checkNum = k - soafArr[loop];
                 for (let kLoop = loop + 1; kLoop < soafArr.length; kLoop++) {
                     if (checkNum == soafArr[kLoop]) {
-                        document.getElementById("OutputSoaf").innerHTML += `Sum Found. ${soafArr[loop]} + ${soafArr[kLoop]} = ${k}.   `
+                        document.getElementById("OutputSoaf").innerHTML += `Sum Found. ${soafArr[loop]} + ${soafArr[kLoop]} = ${k}. <br />`
+                     
                     }
 
                 }
