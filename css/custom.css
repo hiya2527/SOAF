@@ -3,6 +3,10 @@
     margin-bottom: 10px
     
 }*/
+body {
+    background-color: #E8e8d9
+}
+
 .centered {
     position: absolute;
     top: 50%;
